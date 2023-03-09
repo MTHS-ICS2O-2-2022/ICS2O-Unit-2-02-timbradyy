@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html>
+<!-- ICS2O-Unit2-02-HTML -->
+<html lang="en-ca">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Basic Math, with JS" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Tim Brady" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="ryan16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="ryan32.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Area calculator</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Area calculator</span>
+        </div>
+      </header>
+                <span class="mdl-layout-title">The dimensions of a rectangle are 5cm and 3cm</span>
+      <main class="mdl-layout__content">
+        <!-- basic text -->
+        <div id="multiply-math">
+          <p>The area is:</p>
+        </div>
+        <div id="subtract-math">
+          <p>The perimeter is:</p>
+        </div>
+        <img src="area.png" alt="style" />
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="doMathClicked()"
+        >
+          Do math
+        </button>
+      </main>
+    </div>
   </body>
 </html>
